@@ -41,7 +41,7 @@
 #img-itohan{
     width: 250px;
     border-radius: 50%;
-    margin-left: 4em;
+    margin-left: 12em;
 }
 .grid-about{
     position: relative;
@@ -54,4 +54,5 @@
 }
 .grid-about-body{
     color: #fff;
+    margin-right: 9em;
 }
