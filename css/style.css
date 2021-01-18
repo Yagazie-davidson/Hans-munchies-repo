@@ -1,6 +1,6 @@
 /* 
 
-*/
+
 *{
     margin: 0;
     padding: 0;
@@ -11,7 +11,7 @@ body{
     min-height: 1000px;
     margin-left: auto;
     margin-right: auto;
-} 
+}
 .header{
     height: 75vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.2) , rgba(0, 0, 0, 0.2)),url(/images/umesh-soni-LDnmyOaA-ew-unsplash-min.jpg);
@@ -19,7 +19,6 @@ body{
     background-position: center;
     clip-path: polygon(0 0, 100% 0, 100% 300px, 0 100%);
     }
-
 
 .header img{
     width: 150px;
@@ -62,7 +61,6 @@ body{
     margin-left: 1.7em;
     margin-top: 1em;
 }
-
 .btn{
     position: relative;
     display: inline-block;
@@ -151,4 +149,228 @@ footer{
     bottom: 0;
     z-index: -1;
     background-color: #F39ABD;
+}
+
+.toggle{
+    display: none;
+}
+@media (max-width: 786px)
+{
+   *{
+       margin: 0;
+       padding: 0;
+   }
+}
+*/
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    min-height: 1000px;
+    
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    z-index: 1000;
+    transition: 0.6s;
+    
+}
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25em;
+}
+header ul li{
+    position: relative;
+    list-style: none;
+}
+header ul li a{
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 300;
+    transition: 0.6s;
+    
+}
+header.sticky{
+    padding: 5px 100px;
+    background: #fff;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+}
+.banner{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background:  linear-gradient(rgba(0, 0, 0, 0.5) , rgba(0, 0, 0, 0.2)),url(/images/umesh-soni-LDnmyOaA-ew-unsplash-min.jpg);
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 300px, 0 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner h2{
+    background-color: #F39ABD; opacity: 0.8;
+    height: 100%;
+    width: 23rem;
+    padding: 0.938rem;
+    font-size: 5.625rem;
+    font-family: "Josefine Slab",monospace;
+    margin-left: -3.1em;
+    margin-top: 1em;
+}
+.btn{
+    position: relative;
+    display: inline-block;
+    padding: 10px 30px;
+    background: #F39ABD;
+    text-decoration: none;
+    color: #fff;
+    
+    text-transform: uppercase;
+    margin: 10px;
+    text-align: center;
+}
+
+.special-intro h3, .special-intro h3 a{
+    position: relative;
+    display: block;
+    padding: 10px 30px;
+    background: #F39ABD;
+    
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 10px;
+    text-align: center;
+}
+.services{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 30px;
+    max-width: 100%;
+    margin-top: 40px;
+}
+.services .box{
+    width: 300px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.05);
+}
+.services .box .iconBx{
+    margin-top: 25px;
+}
+.services .box .iconBx img{
+    max-width: 300px;
+    border-radius: 10px;
+}
+.doughnutty-delight{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5) , rgba(0, 0, 0, 0.5)) ,url(/images/patrick-fore-I3AkWD8gGCg-unsplash-min.jpg);
+    width: 100%;
+    height: 75vh;
+    background-size: cover;
+    
+}
+.doughnutty-delight h2{
+    transform: rotate(-28.47deg);
+    color: #F39ABD;
+    font-size: 4.2rem;
+    font-family: Kaufmann BT;
+    text-align: left;
+}
+.toggle{
+    display: none;
+}
+@media (max-width: 992px)
+{
+    .toggle{
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+    .toggle:before{
+        content: '';
+        position: absolute;
+        top: 4px;
+        width: 100%;
+        height: 2px;
+        background: #fff;
+        z-index: 1;
+        box-shadow: 0 10px 0 #F39ABD;
+        transition: 0.5s;
+    }
+    .toggle:after{
+        content: '';
+        position: absolute;
+        bottom: 4px;
+        width: 100%;
+        height: 2px;
+        background: #fff;
+        z-index: 1;
+         transition: 0.5s;
+    }
+        header, 
+        header.sticky
+        {
+            padding: 5px 50px;
+            background;
+        }
+        header ul{
+            position: absolute;
+            top: 49px;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            text-align: center;
+            overflow: auto;
+            background: #fff;
+            visibility: hidden;
+            opacity: 0;
+        }
+        header.active ul{
+            visibility: visible;
+            opacity: 1;
+            display: block;
+            padding-top: 20px;
+        }
+        header.active ul li a{
+            display: inline-block;
+            margin: 10px 0;
+            font-size: 20px;
+        }
+        header .logo,
+        header ul li a{
+            color:#000;
+        }
+        .banner{
+            background-position: center;
+        }
+        .banner h2{
+            font-size: 60px;
+            padding: 0 50px;
+        }
+        .sec{
+            padding: 100px 50px 50px 50px;
+        }
 }

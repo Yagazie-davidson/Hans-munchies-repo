@@ -10,7 +10,49 @@
     </style>
 </head>
 <body>
-    
+    <header id="header">
+        <a href="#" class="logo"><img src ="images/logo-header.png" style="width: 125px;"></a>
+        <ul>
+            <li><a href="#home" onclick="toggle()">Home</a></li>
+            <li><a href="#About" onclick="toggle()">About</a></li>
+            <li><a href="#services" onclick="toggle()">Services</a></li>
+            <li><a href="#contact" onclick="toggle()">Contact</a></li>
+
+           
+        </ul>
+        
+        <div class="toggle" onclick="toggle()"></div>
+    </header>
+    <section class="banner" id="home">
+        <h2><span style="color: white;opacity: 1;">Sugary</span><br/><span style="color:  #575651; opacity: 1;">Delight</span></h2> 
+    </section>
+    <a href="#" class="btn">Sugary delights</a>
+    <section class="special-intro">
+            <h3><a href="">Our Specials</a></h3>  
+    </section>
+    <section class="sec" id="services">
+        <div class="services">
+            <div class="box">
+                <div class="iconBx">
+                    <img src="/images/icon1-min.jpg">
+                </div>
+            </div>
+        <div class="box">
+            <div class="iconBx">
+                <img src="/images/icon2-min.jpg">
+            </div>
+        </div>
+            <div class="box">
+                <div class="iconBx">
+                    <img src="/images/icon3-min.jpg">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="doughnutty-delight">
+        <h2 class="doughnutty-delight-text"</h2>
+   </section>
+    <!--
     <header class="header">
             <img src="/images/logo-header.png">
        <ul>
@@ -45,7 +87,7 @@
         </div>
     </section>
     <section class="doughnutty-delight">
-         <h2 class="doughnutty-delight-text"><!--Donutty <br> Delight--></h2>
+         <h2 class="doughnutty-delight-text"</h2>
     </section>
     <footer>
        <div class="footer-wrapper">
@@ -74,5 +116,17 @@
             </div>
        </div> 
     </footer>
+-->
+<script type="text/javascript">
+    window.addEventListener("scroll", function(){
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+    })
+    function toggle(){
+        var header = document.querySelector("header");
+        header.classList.toggle("active");
+        
+    }
+</script>
 </body>
 </html>
