@@ -334,19 +334,20 @@ header.sticky{
         header.sticky
         {
             padding: 5px 50px;
-            background;
+            
         }
         header ul{
             position: absolute;
             top: 49px;
             left: 0;
             width: 100%;
-            height: 100vh;
+            height: 100%;
             text-align: center;
             overflow: auto;
             background: #fff;
             visibility: hidden;
             opacity: 0;
+            
         }
         header.active ul{
             visibility: visible;
@@ -359,10 +360,7 @@ header.sticky{
             margin: 10px 0;
             font-size: 20px;
         }
-        header .logo,
-        header ul li a{
-            color:#000;
-        }
+        
         .banner{
             background-position: center;
         }
@@ -372,5 +370,34 @@ header.sticky{
         }
         .sec{
             padding: 100px 50px 50px 50px;
+        }
+}
+@media (max-width: 481px)
+{
+        .banner{
+            clip-path: polygon(0 0, 100% 0, 100% 990px, 0 100%);
+            min-height: 50vh;
+            
+        }
+        .banner h2{
+            background-color: #F39ABD; opacity: 0.8;
+            height: 100%;
+            width: 12rem;
+            padding: 0.938rem;
+            font-size: 2.625rem;
+            font-family: "Josefine Slab",monospace;
+            margin-left: -4.1em;
+            margin-top: 1em;
+        }
+        .services .box .iconBx{
+            margin-top: 25px;
+            margin-left: -1.7em;
+        }
+        .doughnutty-delight{
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5) , rgba(0, 0, 0, 0.5)) ,url(/images/patrick-fore-I3AkWD8gGCg-unsplash-min.jpg);
+            width: 100%;
+            height: 50vh;
+            background-size: cover;
+            
         }
 }
